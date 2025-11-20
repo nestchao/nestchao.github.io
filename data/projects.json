@@ -2,7 +2,7 @@
     {
         "title": "Study Assistant and Code Synchronization Platform",
         "description": "A high-performance educational platform featuring a full-completeness document ingestion pipeline, layered caching (Redis/In-memory), and a multi-step Gemini AI system for advanced note generation, context-aware chatting, and automated exam solving.",
-        "image": "assets/project1.jpg",
+        "image": "assets/Project1.jpg",
         "github": "https://github.com/nestchao/study-assistant",
         "tags": [
             "Dart",
@@ -13,32 +13,31 @@
     {
         "title": "Travel Package Booking App",
         "description": "A high-quality mobile application utilizing Jetpack Compose and real-time data flow (Firestore Snapshot Listeners) across all features, complemented by a robust notification scheduling system (WorkManager) and an integrated AI assistant (Gemini API).",
-        "image": "assets/project3.jpg",
-        "github": "https://github.com/yourusername/weather-dashboard",
+        "image": "assets/Project2.jpg",
+        "github": "https://github.com/nestchao/Odyssey_Travel_Package_Booking_App",
         "tags": [
             "Kotlin",
             "Jetpack Compose",
             "Firestore",
-            "WorkManager",
             "Gemini API"
         ]
     },
     {
         "title": "Online Shopping System",
         "description": "A robust Java application featuring a dedicated Service Layer for complete CRUD functionality across major entities, ensuring persistent data management via JSON serialization (Gson) and a dynamic, high-fidelity Swing UI (FlatLaf, MigLayout).",
-        "image": "assets/project2.jpg",
+        "image": "assets/Screenshot 2025-11-20 195646.png",
         "github": "https://github.com/nestchao/Online_Shopping_System",
         "tags": [
-           "Java",
-           "Gson",
-           "FlatLaf",
-           "MigLayout"
+            "Java",
+            "Gson",
+            "FlatLaf",
+            "MigLayout"
         ]
     },
     {
         "title": "Musical Awards Management System",
         "description": "a highly modular C++ platform for event management, specializing in complex scheduling with strict conflict resolution, an atomic payment system (with a pending status and automated refunds), and real-time console visualization for monitoring attendance, sales, and venue seating capacity.",
-        "image": "assets/project4.jpg",
+        "image": "assets/Screenshot 2025-11-20 200004.png",
         "github": "https://github.com/nestchao/Musical_Award_System",
         "tags": [
             "C++"
@@ -47,7 +46,7 @@
     {
         "title": "Personal Desktop Management Suite",
         "description": "a comprehensive Personal Desktop Management Suite using Python/Tkinter, seamlessly integrating three applications—an advanced Expense Tracker with visual analytics, a Reminder App featuring scheduled notifications and a dynamic clock, and a structured Note Organizer—all accessible via a fluid, animated main menu.",
-        "image": "assets/project4.jpg",
+        "image": "assets/Screenshot 2025-11-20 190722.png",
         "github": "https://github.com/nestchao/Software_Development_Assignment",
         "tags": [
             "Python"
@@ -56,7 +55,7 @@
     {
         "title": "Airport Flight Network Routing System",
         "description": "a high-integrity, data-persistent flight network manager in Java, built around a core Map graph structure that supports full CRUD operations, and features a BFS-based shortest-path solver with reliable data serialization using Gson.",
-        "image": "assets/project4.jpg",
+        "image": "assets/Screenshot 2025-11-20 200317.png",
         "github": "https://github.com/nestchao/Pilots",
         "tags": [
             "Java"
