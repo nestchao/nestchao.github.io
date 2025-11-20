@@ -1,1 +1,1 @@
-Start-Process "msedge" -ArgumentList "file:///c:/Users/user/Desktop/portfolio_site/index.html"
+python -m http.server 8000

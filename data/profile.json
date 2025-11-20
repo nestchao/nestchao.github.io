@@ -1,38 +1,37 @@
 {
-    "name": "Your Name",
+    "name": "Imam Mahdi Ali Ang Attuko",
     "title": "Full Stack Developer",
     "description": "Passionate about creating beautiful, functional, and user-centered digital experiences. Currently seeking internship opportunities to grow and contribute.",
     "about": {
-        "intro": "I'm a dedicated student with a strong interest in web development and software engineering. I love turning complex problems into simple, beautiful, and intuitive solutions.",
-        "interests": "When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or learning about the latest trends in tech. I'm always eager to take on new challenges and grow my skills.",
-        "goal": "I'm currently seeking internship opportunities where I can apply my knowledge, learn from experienced professionals, and contribute to meaningful projects."
+        "intro": "I'm a driven computer science student currently pursing my Diploma in Computer Science at Tunku Abdul Rahman University of Management and Technology with a proven record of academic excellence 3.9117 CGPA. Skilled in multiple programming languages and frameworks, including Java, Kotlin, C++ and Python, with hands-on experience in database management with MySql and version control with Git",
+        "interests": "My greatest passion outside of core development lies in Artificial Intelligence. I constantly track the latest AI news and tools, and I love developing software solutions aimed at solving real-world problems",
+        "goal": "Seeking a challenging internship position from January 12, 2026, to May 31, 2026. My primary goal is to contribute my existing technical knowledge to team projects while gaining hands-on experience and further developing my professional skills."
     },
     "contact": {
-        "email": "your.email@example.com",
-        "linkedin": "yourprofile",
-        "github": "yourusername",
-        "twitter": "yourhandle"
+        "email": "attukoang5@gmail.com",
+        "linkedin": "attuko-ang-89701738a",
+        "github": "nestchao"
     },
     "skills": [
         {
             "category": "Frontend",
             "icon": "💻",
-            "technologies": "HTML, CSS, JavaScript, React, Vue.js"
+            "technologies": "Java, Kotlin, C++, Python"
         },
         {
             "category": "Backend",
             "icon": "⚙️",
-            "technologies": "Node.js, Python, Express, Django"
+            "technologies": "Java, C++, Python"
         },
         {
             "category": "Database",
             "icon": "🗄️",
-            "technologies": "MySQL, MongoDB, PostgreSQL"
+            "technologies": "MySql"
         },
         {
             "category": "Tools",
             "icon": "🛠️",
-            "technologies": "Git, Docker, VS Code, Figma"
+            "technologies": "Git, VS Code, Figma"
         }
     ]
 }

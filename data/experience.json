@@ -1,26 +1,20 @@
 [
-  {
-    "date": "2023 - Present",
-    "title": "Bachelor of Computer Science",
-    "company": "University Name",
-    "description": "Relevant coursework: Data Structures, Algorithms, Web Development, Database Systems, Software Engineering"
-  },
-  {
-    "date": "Summer 2024",
-    "title": "Web Development Intern",
-    "company": "Company Name",
-    "description": "Developed responsive web applications using React and Node.js. Collaborated with design team to implement user interfaces."
-  },
-  {
-    "date": "2023",
-    "title": "Freelance Developer",
-    "company": "Self-Employed",
-    "description": "Built custom websites for small businesses. Managed client relationships and project timelines."
-  },
-  {
-    "date": "2022",
-    "title": "Coding Bootcamp Graduate",
-    "company": "Bootcamp Name",
-    "description": "Intensive 12-week program covering full-stack web development, including HTML, CSS, JavaScript, and modern frameworks."
-  }
+    {
+        "date": "2024 - Present",
+        "title": "Diploma in Computer Science",
+        "company": "Tunku Abdul Rahman University of Management and Technology",
+        "description": "Current CGPA: 3.9/4.0 \n Relevant coursework: Data Structures, Database Development, Computer Networks, Object-Oriented Programming, Mobile Application Development, Parallel and Distributed Computing"
+    },
+    {
+        "date": "March 2024 - May 2024",
+        "title": "Part Time Job",
+        "company": "Sunshine Hampers & Florist (J) Sdn. Bhd.",
+        "description": "Managed the end-to-end retail sales cycle, from providing expert customer consultation on custom goods to processing final payments. Handled daily financial operations, including invoicing, managing cash and credit transactions via the POS system, and performing accurate reconciliations."
+    },
+    {
+        "date": "2019 - 2024",
+        "title": "Secondary Education",
+        "company": "Sekolah Menengah Kebangsaan Taman Pelangi Indah",
+        "description": "Science Stream student studying biology, chemistry, physics, and additional mathematics. With a Sijil Pelajaran Malaysia (SPM) grade of 1A+, 1A, 2A-, 3B+, 1B, 1C+"
+    }
 ]
