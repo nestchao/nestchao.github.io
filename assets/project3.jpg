@@ -1,0 +1,14 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#grad3)"/>
+  <text x="400" y="220" font-family="Arial, sans-serif" font-size="48" fill="white" text-anchor="middle" font-weight="bold">Weather</text>
+  <text x="400" y="280" font-family="Arial, sans-serif" font-size="32" fill="rgba(255,255,255,0.8)" text-anchor="middle">Dashboard</text>
+  <circle cx="250" cy="360" r="50" fill="rgba(255,255,255,0.3)" stroke="white" stroke-width="3"/>
+  <text x="250" y="375" font-family="Arial, sans-serif" font-size="36" fill="white" text-anchor="middle">☀️</text>
+  <rect x="350" y="330" width="200" height="60" rx="30" fill="rgba(255,255,255,0.2)"/>
+</svg>

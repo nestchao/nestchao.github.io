@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2023 - Present",
+    "title": "Bachelor of Computer Science",
+    "company": "University Name",
+    "description": "Relevant coursework: Data Structures, Algorithms, Web Development, Database Systems, Software Engineering"
+  },
+  {
+    "date": "Summer 2024",
+    "title": "Web Development Intern",
+    "company": "Company Name",
+    "description": "Developed responsive web applications using React and Node.js. Collaborated with design team to implement user interfaces."
+  },
+  {
+    "date": "2023",
+    "title": "Freelance Developer",
+    "company": "Self-Employed",
+    "description": "Built custom websites for small businesses. Managed client relationships and project timelines."
+  },
+  {
+    "date": "2022",
+    "title": "Coding Bootcamp Graduate",
+    "company": "Bootcamp Name",
+    "description": "Intensive 12-week program covering full-stack web development, including HTML, CSS, JavaScript, and modern frameworks."
+  }
+]

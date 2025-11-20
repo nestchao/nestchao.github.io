@@ -1,0 +1,46 @@
+[
+    {
+        "title": "E-Commerce Platform",
+        "description": "A full-stack e-commerce application with user authentication, product management, and payment integration.",
+        "image": "assets/project1.jpg",
+        "github": "https://github.com/yourusername/ecommerce-platform",
+        "tags": [
+            "React",
+            "Node.js",
+            "MongoDB"
+        ]
+    },
+    {
+        "title": "Task Management App",
+        "description": "A responsive task management application with drag-and-drop functionality and real-time updates.",
+        "image": "assets/project2.jpg",
+        "github": "https://github.com/yourusername/task-manager-app",
+        "tags": [
+            "Vue.js",
+            "Firebase",
+            "CSS3"
+        ]
+    },
+    {
+        "title": "Weather Dashboard",
+        "description": "An interactive weather dashboard that displays current conditions and forecasts using external APIs.",
+        "image": "assets/project3.jpg",
+        "github": "https://github.com/yourusername/weather-dashboard",
+        "tags": [
+            "JavaScript",
+            "API",
+            "Chart.js"
+        ]
+    },
+    {
+        "title": "Social Media Dashboard",
+        "description": "A comprehensive analytics dashboard for tracking social media metrics and engagement.",
+        "image": "assets/project4.jpg",
+        "github": "https://github.com/yourusername/social-media-dashboard",
+        "tags": [
+            "Python",
+            "Django",
+            "PostgreSQL"
+        ]
+    }
+]

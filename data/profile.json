@@ -1,0 +1,38 @@
+{
+    "name": "Your Name",
+    "title": "Full Stack Developer",
+    "description": "Passionate about creating beautiful, functional, and user-centered digital experiences. Currently seeking internship opportunities to grow and contribute.",
+    "about": {
+        "intro": "I'm a dedicated student with a strong interest in web development and software engineering. I love turning complex problems into simple, beautiful, and intuitive solutions.",
+        "interests": "When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or learning about the latest trends in tech. I'm always eager to take on new challenges and grow my skills.",
+        "goal": "I'm currently seeking internship opportunities where I can apply my knowledge, learn from experienced professionals, and contribute to meaningful projects."
+    },
+    "contact": {
+        "email": "your.email@example.com",
+        "linkedin": "yourprofile",
+        "github": "yourusername",
+        "twitter": "yourhandle"
+    },
+    "skills": [
+        {
+            "category": "Frontend",
+            "icon": "💻",
+            "technologies": "HTML, CSS, JavaScript, React, Vue.js"
+        },
+        {
+            "category": "Backend",
+            "icon": "⚙️",
+            "technologies": "Node.js, Python, Express, Django"
+        },
+        {
+            "category": "Database",
+            "icon": "🗄️",
+            "technologies": "MySQL, MongoDB, PostgreSQL"
+        },
+        {
+            "category": "Tools",
+            "icon": "🛠️",
+            "technologies": "Git, Docker, VS Code, Figma"
+        }
+    ]
+}
