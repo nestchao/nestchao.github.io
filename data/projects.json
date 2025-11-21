@@ -2,7 +2,7 @@
     {
         "title": "Study Assistant and Code Synchronization Platform",
         "description": "A high-performance educational platform featuring a full-completeness document ingestion pipeline, layered caching (Redis/In-memory), and a multi-step Gemini AI system for advanced note generation, context-aware chatting, and automated exam solving.",
-        "image": "assets/Project1.jpg",
+        "image": "assets/Screenshot 2025-11-20 190531.png",
         "github": "https://github.com/nestchao/study-assistant",
         "tags": [
             "Dart",
@@ -13,7 +13,7 @@
     {
         "title": "Travel Package Booking App",
         "description": "A high-quality mobile application utilizing Jetpack Compose and real-time data flow (Firestore Snapshot Listeners) across all features, complemented by a robust notification scheduling system (WorkManager) and an integrated AI assistant (Gemini API).",
-        "image": "assets/Project2.jpg",
+        "image": "assets/Screenshot 2025-11-20 190532.png",
         "github": "https://github.com/nestchao/Odyssey_Travel_Package_Booking_App",
         "tags": [
             "Kotlin",
