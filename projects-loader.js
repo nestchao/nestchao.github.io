@@ -35,6 +35,22 @@ async function loadProjects() {
             portfolioGrid.appendChild(article);
         });
 
+        // --- ADDED: Animate the new project cards ---
+        const projectObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        const projectCards = portfolioGrid.querySelectorAll('.project-card');
+        projectCards.forEach((card, index) => {
+            card.classList.add('fade-in');
+            card.style.transitionDelay = `${index * 0.15}s`;
+            projectObserver.observe(card);
+        });
+
     } catch (error) {
         console.error('Error loading projects data:', error);
     }

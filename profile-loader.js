@@ -126,6 +126,22 @@ async function loadProfile() {
 
                     skillsGrid.appendChild(skillCard);
                 });
+
+                // --- ADDED: Animate the new skill cards ---
+                const skillObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                        }
+                    });
+                }, { threshold: 0.1 });
+
+                const skillCards = skillsGrid.querySelectorAll('.skill-card');
+                skillCards.forEach((card, index) => {
+                    card.classList.add('fade-in');
+                    card.style.transitionDelay = `${index * 0.1}s`;
+                    skillObserver.observe(card);
+                });
             }
         }
 

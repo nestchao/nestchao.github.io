@@ -125,42 +125,15 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe elements for scroll animations
 document.addEventListener('DOMContentLoaded', () => {
-    // Add fade-in class to elements
-    const skillCards = document.querySelectorAll('.skill-card');
-    const projectCards = document.querySelectorAll('.project-card');
-    const timelineItems = document.querySelectorAll('.timeline-item');
-    const contactMethods = document.querySelectorAll('.contact-method');
-    
-    skillCards.forEach((card, index) => {
-        card.classList.add('fade-in');
-        card.style.transitionDelay = `${index * 0.1}s`;
-        observer.observe(card);
-    });
-    
-    projectCards.forEach((card, index) => {
-        card.classList.add('fade-in');
-        card.style.transitionDelay = `${index * 0.15}s`;
-        observer.observe(card);
-    });
-    
-    timelineItems.forEach((item, index) => {
-        item.classList.add('slide-in-left');
-        item.style.transitionDelay = `${index * 0.2}s`;
-        observer.observe(item);
-    });
-    
-    contactMethods.forEach((method, index) => {
-        method.classList.add('fade-in');
-        method.style.transitionDelay = `${index * 0.1}s`;
-        observer.observe(method);
-    });
-    
-    // Observe section headers
+    // Observe section headers (static content)
     const sectionHeaders = document.querySelectorAll('.section-header');
     sectionHeaders.forEach(header => {
         header.classList.add('fade-in');
         observer.observe(header);
     });
+    
+    // NOTE: Animation for dynamic elements (skills, projects, timeline)
+    // has been moved to their respective loader files to prevent race conditions.
 });
 
 // ===========================

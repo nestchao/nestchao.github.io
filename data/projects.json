@@ -55,7 +55,7 @@
     {
         "title": "Airport Flight Network Routing System",
         "description": "a high-integrity, data-persistent flight network manager in Java, built around a core Map graph structure that supports full CRUD operations, and features a BFS-based shortest-path solver with reliable data serialization using Gson.",
-        "image": "assets/Screenshot 2025-11-20 200317.png",
+        "image": "assets/Screenshot 2025-11-21 110650.png",
         "github": "https://github.com/nestchao/Pilots",
         "tags": [
             "Java"
