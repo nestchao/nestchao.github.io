@@ -1,5 +1,24 @@
 [
     {
+        "slug": "hotspot-bypass-vpn",
+        "title": "Hotspot Bypass VPN: Unlimited Hotspot",
+        "description": "Shares an Android phone's mobile data with a Windows PC over Wi-Fi Direct through a SOCKS5/tun2socks tunnel and Wintun. No root needed, and low latency for gaming.",
+        "github": "https://github.com/nestchao/Hotspot-Bypass-VPN-Unlimited-Hotspot",
+        "featured": true,
+        "categories": [
+            "Mobile",
+            "Desktop",
+            "Networking"
+        ],
+        "tags": [
+            "Kotlin",
+            "Python",
+            "tun2socks",
+            "Wi-Fi Direct",
+            "Windows"
+        ]
+    },
+    {
         "slug": "sonicbrief",
         "title": "SonicBrief: Video & Audio to Transcripts and Summaries",
         "description": "Turns video and audio into timestamped transcripts and clean summaries. Runs Whisper locally on Windows, with a standalone Android app, a Chrome extension and an MCP server so AI agents can use it too. No accounts, no cloud uploads.",
@@ -39,29 +58,11 @@
         ]
     },
     {
-        "slug": "odyssey",
-        "title": "Travel Package Booking App",
-        "description": "A mobile application built with Jetpack Compose and real-time data flow (Firestore snapshot listeners) across all features, complemented by a robust notification scheduling system (WorkManager) and an integrated AI assistant (Gemini API).",
-        "image": "assets/Screenshot 2025-11-20 190532.png",
-        "github": "https://github.com/nestchao/Odyssey_Travel_Package_Booking_App",
-        "featured": true,
-        "categories": [
-            "Mobile",
-            "AI"
-        ],
-        "tags": [
-            "Kotlin",
-            "Jetpack Compose",
-            "Firestore",
-            "Gemini API"
-        ]
-    },
-    {
         "slug": "malaysia-sign-language",
         "title": "Malaysian Sign Language Recognition",
         "description": "Recognises Malaysian Sign Language from video using MediaPipe hand and pose landmarks and machine learning.",
         "github": "https://github.com/nestchao/malaysia-sign-language",
-        "featured": false,
+        "featured": true,
         "categories": [
             "AI"
         ],
@@ -72,11 +73,29 @@
         ]
     },
     {
+        "slug": "esg-passport",
+        "title": "ESG Passport: ESG Responses for Malaysian SMEs",
+        "description": "Turns SMEs' monthly records (bills, receipts, spreadsheets) into traceable, human-reviewed ESG questionnaire responses, using document OCR, requirement mapping and evidence matching, with owner approval before anything is shared. Built with a team of four for the Orbyte Smart SME Challenge.",
+        "github": "https://github.com/nestchao/ESG-Passport",
+        "featured": true,
+        "categories": [
+            "AI",
+            "Full-stack"
+        ],
+        "tags": [
+            "TypeScript",
+            "Next.js",
+            "FastAPI",
+            "Python",
+            "OCR"
+        ]
+    },
+    {
         "slug": "xiaobao-android",
         "title": "XiaobaoYingYuan: Android Streaming Client",
         "description": "A modern Android video-streaming client built with Jetpack Compose and Clean Architecture (MVVM), with ExoPlayer playback and an HTML scraping engine built on Jsoup.",
         "github": "https://github.com/nestchao/XiaobaoYingYuan_APK",
-        "featured": false,
+        "featured": true,
         "categories": [
             "Mobile"
         ],
@@ -85,6 +104,24 @@
             "Jetpack Compose",
             "ExoPlayer",
             "MVVM"
+        ]
+    },
+    {
+        "slug": "odyssey",
+        "title": "Travel Package Booking App",
+        "description": "A mobile application built with Jetpack Compose and real-time data flow (Firestore snapshot listeners) across all features, complemented by a robust notification scheduling system (WorkManager) and an integrated AI assistant (Gemini API).",
+        "image": "assets/Screenshot 2025-11-20 190532.png",
+        "github": "https://github.com/nestchao/Odyssey_Travel_Package_Booking_App",
+        "featured": false,
+        "categories": [
+            "Mobile",
+            "AI"
+        ],
+        "tags": [
+            "Kotlin",
+            "Jetpack Compose",
+            "Firestore",
+            "Gemini API"
         ]
     },
     {
