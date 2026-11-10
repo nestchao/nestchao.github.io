@@ -22,7 +22,7 @@ All the text lives in `data/`, so you rarely need to touch HTML:
 | File | Contents |
 | --- | --- |
 | `data/profile.json` | name, rotating `roles`, status line, bio (`about`), `facts`, `skills`, contact links, résumé path |
-| `data/projects.json` | project cards: `title`, `description`, `image`, `github`, `tags`, `categories` (drive the filter chips), `featured` |
+| `data/projects.json` | project cards: `title`, `description`, `github`, `tags`, `categories` (drive the filter chips), `featured`, and an optional `image` (projects without one get a generated placeholder) |
 | `data/experience.json` | timeline entries: `date`, `type` (`education` or `work`), `title`, `company`, `description` |
 | `data/posts.json` | blog index: `slug`, `title`, `date` (YYYY-MM-DD), `summary`, `tags`, `minutes` |
 

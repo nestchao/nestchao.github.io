@@ -20,7 +20,7 @@
         (function () {
             var d = document.documentElement, t = null;
             try { t = localStorage.getItem('theme'); } catch (e) { }
-            if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+            if (t !== 'light' && t !== 'dark') t = 'dark'; // dark by default
             d.setAttribute('data-theme', t);
             if (matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.remove('motion');
         })();

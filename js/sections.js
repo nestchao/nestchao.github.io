@@ -105,7 +105,9 @@ export function renderProjects(projects) {
             },
                 el('div', { class: 'project-media' },
                     p.featured && el('span', { class: 'project-badge' }, '★ featured'),
-                    p.image && el('img', { src: encodeURI(p.image), alt: `Screenshot of ${p.title}`, loading: 'lazy', decoding: 'async', width: 640, height: 400 }),
+                    p.image
+                        ? el('img', { src: encodeURI(p.image), alt: `Screenshot of ${p.title}`, loading: 'lazy', decoding: 'async', width: 640, height: 400 })
+                        : el('div', { class: 'project-art', 'aria-hidden': 'true' }, el('span', { class: 'project-art-name' }, slug), el('span', { class: 'project-art-lang' }, (p.tags || [])[0] || '')),
                 ),
                 el('div', { class: 'project-body' },
                     el('p', { class: 'project-path' }, `~/projects/${slug}`),

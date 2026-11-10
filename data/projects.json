@@ -1,13 +1,110 @@
 [
     {
-        "slug": "study-assistant",
-        "title": "Study Assistant and Code Synchronization Platform",
+        "slug": "hotspot-bypass-vpn",
+        "title": "Hotspot Bypass VPN: Unlimited Hotspot",
+        "description": "Shares an Android phone's mobile data with a Windows PC over Wi-Fi Direct through a SOCKS5/tun2socks tunnel and Wintun. No root needed, and low latency for gaming.",
+        "github": "https://github.com/nestchao/Hotspot-Bypass-VPN-Unlimited-Hotspot",
+        "featured": true,
+        "categories": [
+            "Mobile",
+            "Desktop",
+            "Networking"
+        ],
+        "tags": [
+            "Kotlin",
+            "Python",
+            "tun2socks",
+            "Wi-Fi Direct",
+            "Windows"
+        ]
+    },
+    {
+        "slug": "sonicbrief",
+        "title": "SonicBrief: Video & Audio to Transcripts and Summaries",
+        "description": "Turns video and audio into timestamped transcripts and clean summaries. Runs Whisper locally on Windows, with a standalone Android app, a Chrome extension and an MCP server so AI agents can use it too. No accounts, no cloud uploads.",
+        "github": "https://github.com/nestchao/SonicBrief",
+        "featured": true,
+        "categories": [
+            "AI",
+            "Mobile",
+            "Desktop"
+        ],
+        "tags": [
+            "Kotlin",
+            "Jetpack Compose",
+            "Whisper",
+            "MCP",
+            "Chrome Extension"
+        ]
+    },
+    {
+        "slug": "synapse-flow",
+        "title": "Synapse Flow: AI Study Hub & Code Workspace",
         "description": "A high-performance educational platform featuring a full-completeness document ingestion pipeline, layered caching (Redis/in-memory), and a multi-step Gemini AI system for advanced note generation, context-aware chatting, and automated exam solving.",
         "image": "assets/Screenshot 2025-11-20 190531.png",
-        "github": "https://github.com/nestchao/study-assistant",
+        "github": "https://github.com/nestchao/Synapse-Flow",
         "featured": true,
-        "categories": ["AI", "Full-stack", "Mobile"],
-        "tags": ["Dart", "Flutter", "Python", "Redis", "Gemini API"]
+        "categories": [
+            "AI",
+            "Full-stack",
+            "Mobile"
+        ],
+        "tags": [
+            "Dart",
+            "Flutter",
+            "Python",
+            "Redis",
+            "Gemini API"
+        ]
+    },
+    {
+        "slug": "malaysia-sign-language",
+        "title": "Malaysian Sign Language Recognition",
+        "description": "Recognises Malaysian Sign Language from video using MediaPipe hand and pose landmarks and machine learning.",
+        "github": "https://github.com/nestchao/malaysia-sign-language",
+        "featured": true,
+        "categories": [
+            "AI"
+        ],
+        "tags": [
+            "Python",
+            "MediaPipe",
+            "Machine Learning"
+        ]
+    },
+    {
+        "slug": "esg-passport",
+        "title": "ESG Passport: ESG Responses for Malaysian SMEs",
+        "description": "Turns SMEs' monthly records (bills, receipts, spreadsheets) into traceable, human-reviewed ESG questionnaire responses, using document OCR, requirement mapping and evidence matching, with owner approval before anything is shared. Built with a team of four for the Orbyte Smart SME Challenge.",
+        "github": "https://github.com/nestchao/ESG-Passport",
+        "featured": true,
+        "categories": [
+            "AI",
+            "Full-stack"
+        ],
+        "tags": [
+            "TypeScript",
+            "Next.js",
+            "FastAPI",
+            "Python",
+            "OCR"
+        ]
+    },
+    {
+        "slug": "xiaobao-android",
+        "title": "XiaobaoYingYuan: Android Streaming Client",
+        "description": "A modern Android video-streaming client built with Jetpack Compose and Clean Architecture (MVVM), with ExoPlayer playback and an HTML scraping engine built on Jsoup.",
+        "github": "https://github.com/nestchao/XiaobaoYingYuan_APK",
+        "featured": true,
+        "categories": [
+            "Mobile"
+        ],
+        "tags": [
+            "Kotlin",
+            "Jetpack Compose",
+            "ExoPlayer",
+            "MVVM"
+        ]
     },
     {
         "slug": "odyssey",
@@ -15,9 +112,17 @@
         "description": "A mobile application built with Jetpack Compose and real-time data flow (Firestore snapshot listeners) across all features, complemented by a robust notification scheduling system (WorkManager) and an integrated AI assistant (Gemini API).",
         "image": "assets/Screenshot 2025-11-20 190532.png",
         "github": "https://github.com/nestchao/Odyssey_Travel_Package_Booking_App",
-        "featured": true,
-        "categories": ["Mobile", "AI"],
-        "tags": ["Kotlin", "Jetpack Compose", "Firestore", "Gemini API"]
+        "featured": false,
+        "categories": [
+            "Mobile",
+            "AI"
+        ],
+        "tags": [
+            "Kotlin",
+            "Jetpack Compose",
+            "Firestore",
+            "Gemini API"
+        ]
     },
     {
         "slug": "pilots",
@@ -26,8 +131,16 @@
         "image": "assets/Screenshot 2025-11-21 110650.png",
         "github": "https://github.com/nestchao/Pilots",
         "featured": false,
-        "categories": ["Algorithms", "Desktop"],
-        "tags": ["Java", "Graphs", "BFS", "Gson"]
+        "categories": [
+            "Algorithms",
+            "Desktop"
+        ],
+        "tags": [
+            "Java",
+            "Graphs",
+            "BFS",
+            "Gson"
+        ]
     },
     {
         "slug": "online-shopping",
@@ -36,8 +149,15 @@
         "image": "assets/Screenshot 2025-11-20 195646.png",
         "github": "https://github.com/nestchao/Online_Shopping_System",
         "featured": false,
-        "categories": ["Desktop"],
-        "tags": ["Java", "Gson", "FlatLaf", "MigLayout"]
+        "categories": [
+            "Desktop"
+        ],
+        "tags": [
+            "Java",
+            "Gson",
+            "FlatLaf",
+            "MigLayout"
+        ]
     },
     {
         "slug": "musical-awards",
@@ -46,8 +166,14 @@
         "image": "assets/Screenshot 2025-11-20 200004.png",
         "github": "https://github.com/nestchao/Musical_Award_System",
         "featured": false,
-        "categories": ["Systems"],
-        "tags": ["C++", "OOP", "Console UI"]
+        "categories": [
+            "Systems"
+        ],
+        "tags": [
+            "C++",
+            "OOP",
+            "Console UI"
+        ]
     },
     {
         "slug": "desktop-suite",
@@ -56,7 +182,12 @@
         "image": "assets/Screenshot 2025-11-20 190722.png",
         "github": "https://github.com/nestchao/Software_Development_Assignment",
         "featured": false,
-        "categories": ["Desktop"],
-        "tags": ["Python", "Tkinter"]
+        "categories": [
+            "Desktop"
+        ],
+        "tags": [
+            "Python",
+            "Tkinter"
+        ]
     }
 ]
