@@ -1,20 +1,23 @@
 [
     {
         "date": "2024 - Present",
+        "type": "education",
         "title": "Diploma in Computer Science",
         "company": "Tunku Abdul Rahman University of Management and Technology",
-        "description": "Current CGPA: 3.9/4.0 \n Relevant coursework: Data Structures, Database Development, Computer Networks, Object-Oriented Programming, Mobile Application Development, Parallel and Distributed Computing"
+        "description": "Current CGPA: 3.9/4.0. Relevant coursework: Data Structures, Database Development, Computer Networks, Object-Oriented Programming, Mobile Application Development, Parallel and Distributed Computing."
     },
     {
         "date": "March 2024 - May 2024",
+        "type": "work",
         "title": "Part Time Job",
         "company": "Sunshine Hampers & Florist (J) Sdn. Bhd.",
         "description": "Managed the end-to-end retail sales cycle, from providing expert customer consultation on custom goods to processing final payments. Handled daily financial operations, including invoicing, managing cash and credit transactions via the POS system, and performing accurate reconciliations."
     },
     {
         "date": "2019 - 2024",
+        "type": "education",
         "title": "Secondary Education",
         "company": "Sekolah Menengah Kebangsaan Taman Pelangi Indah",
-        "description": "Science Stream student studying biology, chemistry, physics, and additional mathematics. With a Sijil Pelajaran Malaysia (SPM) grade of 1A+, 1A, 2A-, 3B+, 1B, 1C+"
+        "description": "Science Stream student studying biology, chemistry, physics, and additional mathematics. Sijil Pelajaran Malaysia (SPM) results: 1A+, 1A, 2A-, 3B+, 1B, 1C+."
     }
 ]

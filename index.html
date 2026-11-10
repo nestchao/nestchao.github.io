@@ -1,268 +1,313 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="motion">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio showcasing projects, skills, and experience.">
-    <meta name="keywords" content="portfolio, web development, projects, resume, internship">
-    <meta name="author" content="Your Name">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Imam Mahdi (nestchao) · Software Developer</title>
+    <meta name="description"
+        content="Portfolio of Imam Mahdi Ali Ang Attuko (nestchao): computer science student and software developer building AI-powered, mobile and desktop software.">
+    <meta name="author" content="Imam Mahdi Ali Ang Attuko">
+    <meta name="theme-color" content="#0a0d12">
+    <meta property="og:title" content="Imam Mahdi (nestchao) · Software Developer">
+    <meta property="og:description" content="Projects, experience and notes from a developer who loves AI and real-world software.">
+    <meta property="og:type" content="website">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0d12'/%3E%3Cpath d='M8 11l6 5-6 5' stroke='%233ddc97' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16 22h8' stroke='%233ddc97' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+
+    <!-- Theme + motion boot (runs before paint to avoid a flash) -->
+    <script>
+        (function () {
+            var d = document.documentElement, t = null;
+            try { t = localStorage.getItem('theme'); } catch (e) { }
+            if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+            d.setAttribute('data-theme', t);
+            if (matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.remove('motion');
+        })();
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <style>
-        /* Fix Experience section background */
-        .experience {
-            background-color: var(--color-bg);
-        }
-
-        /* Center Experience content */
-        .timeline {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        /* Fix icon visibility */
-        .skill-icon {
-            color: white !important;
-        }
-
-        .contact-icon {
-            color: white !important;
-        }
-    </style>
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">
-                <span class="logo-text">Portfolio</span>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Icon sprite -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></symbol>
+            <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+            <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></g></symbol>
+            <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></symbol>
+            <symbol id="i-download" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></g></symbol>
+            <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></g></symbol>
+            <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></symbol>
+            <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></g></symbol>
+            <symbol id="i-external" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></g></symbol>
+            <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2Z"/></symbol>
+            <symbol id="i-fork" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="5" r="2"/><circle cx="18" cy="5" r="2"/><circle cx="12" cy="19" r="2"/><path d="M6 7v2a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V7M12 12v5"/></g></symbol>
+            <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></g></symbol>
+            <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+            <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+            <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
+            <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+            <symbol id="i-branch" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="8" r="2.5"/><path d="M6 8.5v7M18 10.5c0 4-6 3-11 5.5"/></g></symbol>
+            <symbol id="i-terminal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 17 6-5-6-5"/><path d="M12 19h8"/></g></symbol>
+            <symbol id="i-file" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></g></symbol>
+        </defs>
+    </svg>
+
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <!-- Top bar: editor tabs -->
+    <header class="topbar" id="topbar">
+        <div class="topbar-inner">
+            <a href="#home" class="brand" aria-label="Home">
+                <span class="brand-prompt">~/</span><span class="brand-name">nestchao</span><span class="brand-caret" aria-hidden="true"></span>
             </a>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <p class="hero-greeting">Hi, I'm</p>
-                <h1 class="hero-name">Your Name</h1>
-                <div class="hero-title">
-                    <span class="typing-text">Full Stack Developer</span>
-                    <span class="cursor">|</span>
-                </div>
-                <p class="hero-description">
-                    Passionate about creating beautiful, functional, and user-centered digital experiences.
-                    Currently seeking internship opportunities to grow and contribute.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <span>Scroll Down</span>
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
+            <nav class="tabs" id="tabs" aria-label="Sections">
+                <a class="tab" href="#about" data-section="about"><span class="tab-dot" style="--c:var(--cyan)"></span>about.ts</a>
+                <a class="tab" href="#github" data-section="github"><span class="tab-dot" style="--c:var(--purple)"></span>stats.json</a>
+                <a class="tab" href="#projects" data-section="projects"><span class="tab-dot" style="--c:var(--yellow)"></span>projects/</a>
+                <a class="tab" href="#experience" data-section="experience"><span class="tab-dot" style="--c:var(--orange)"></span>git log</a>
+                <a class="tab" href="#blog" data-section="blog"><span class="tab-dot" style="--c:var(--blue)"></span>blog/</a>
+                <a class="tab" href="#contact" data-section="contact"><span class="tab-dot" style="--c:var(--accent)"></span>contact.sh</a>
+                <span class="tab-indicator" aria-hidden="true"></span>
+            </nav>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Get to know me better</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Hello! I'm a passionate developer</h3>
-                    <p>I'm a dedicated student with a strong interest in web development and software engineering. I
-                        love turning complex problems into simple, beautiful, and intuitive solutions.</p>
-                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source
-                        projects, or learning about the latest trends in tech. I'm always eager to take on new
-                        challenges and grow my skills.</p>
-                    <p>I'm currently seeking internship opportunities where I can apply my knowledge, learn from
-                        experienced professionals, and contribute to meaningful projects.</p>
-                </div>
-                <div class="skills-container">
-                    <h3>Skills & Technologies</h3>
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="2" y="3" width="20" height="14" rx="2"></rect>
-                                    <path d="M8 21h8M12 17v4"></path>
-                                </svg>
-                            </div>
-                            <h4>Frontend</h4>
-                            <p>HTML, CSS, JavaScript, React, Vue.js</p>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="3"></circle>
-                                    <path d="M12 1v6m0 6v6"></path>
-                                    <path d="m4.93 4.93 4.24 4.24m5.66 5.66 4.24 4.24M1 12h6m6 0h6"></path>
-                                    <path d="m4.93 19.07 4.24-4.24m5.66-5.66 4.24-4.24"></path>
-                                </svg>
-                            </div>
-                            <h4>Backend</h4>
-                            <p>Node.js, Python, Express, Django</p>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2">
-                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                                    <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
-                                </svg>
-                            </div>
-                            <h4>Database</h4>
-                            <p>MySQL, MongoDB, PostgreSQL</p>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2">
-                                    <path
-                                        d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <h4>Tools</h4>
-                            <p>Git, Docker, VS Code, Figma</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="topbar-actions">
+                <button class="palette-btn" id="palette-open" type="button" aria-label="Open command palette">
+                    <svg class="icon"><use href="#i-search"/></svg>
+                    <span class="palette-btn-label">Search</span>
+                    <kbd class="kbd-hint">Ctrl K</kbd>
+                </button>
+                <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-label="Toggle colour theme">
+                    <svg class="icon icon-sun"><use href="#i-sun"/></svg>
+                    <svg class="icon icon-moon"><use href="#i-moon"/></svg>
+                </button>
+                <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="tabs">
+                    <svg class="icon icon-menu"><use href="#i-menu"/></svg>
+                    <svg class="icon icon-close"><use href="#i-close"/></svg>
+                </button>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Portfolio</h2>
-                <p class="section-subtitle">Check out my recent projects</p>
-            </div>
-            <div class="portfolio-grid">
-                <!-- Projects will be loaded dynamically by projects-loader.js -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Experience</h2>
-                <p class="section-subtitle">My journey so far</p>
-            </div>
-            <div class="timeline" id="timeline-container">
-                <!-- Timeline items will be loaded dynamically -->
-            </div>
-            <div class="resume-download">
-                <a href="assets/resume.pdf" download="Imam_Mahdi_Ali_Ang_Attuko_Resume.pdf" class="btn btn-primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                        <polyline points="7 10 12 15 17 10"></polyline>
-                        <line x1="12" y1="15" x2="12" y2="3"></line>
-                    </svg>
-                    Download Resume
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's work together</p>
-            </div>
-
-            <div class="contact-wrapper">
-                <!-- Left Column: Description & Direct Contact -->
-                <div class="contact-left">
-                    <h3 class="contact-heading">Let's connect!</h3>
-                    <p class="contact-desc">
-                        I'm currently looking for internship opportunities. Whether you have a question
-                        or just want to say hi, feel free to reach out!
+    <main id="main">
+        <!-- ============================== HERO ============================== -->
+        <section id="home" class="hero" data-section-name="home">
+            <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow"><span class="pulse" aria-hidden="true"></span><span id="hero-status">Open to internships &amp; collaborations</span></p>
+                    <h1 class="hero-name">
+                        <span class="hero-hello">Hello, I'm</span>
+                        <span class="hero-name-text" id="hero-name">Imam Mahdi</span>
+                    </h1>
+                    <p class="hero-role" aria-live="polite">
+                        <span class="hero-role-prompt">&gt;</span>
+                        <span id="hero-role">Software Developer</span><span class="type-caret" aria-hidden="true"></span>
                     </p>
-
-                    <div class="contact-cards">
-                        <!-- Contact cards will be loaded dynamically -->
+                    <p class="hero-desc" id="hero-desc">I build software that solves real problems, from AI-powered study tools to mobile apps and graph-based routing systems.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary" data-magnetic>
+                            <span>./view-projects</span>
+                            <svg class="icon"><use href="#i-arrow"/></svg>
+                        </a>
+                        <a href="assets/resume.pdf" class="btn btn-ghost" id="hero-resume" target="_blank" rel="noopener" data-magnetic>
+                            <svg class="icon"><use href="#i-download"/></svg>
+                            <span>resume.pdf</span>
+                        </a>
                     </div>
+                    <ul class="hero-meta" id="hero-meta" aria-label="Quick facts"></ul>
                 </div>
 
-                <!-- Right Column: Social Icons -->
-                <div class="contact-right">
-                    <h3 class="contact-heading">Follow Me</h3>
-                    <div class="social-stack">
-                        <a href="https://github.com/yourusername" target="_blank" class="social-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path
-                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                </path>
-                            </svg>
-                        </a>
-                        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path
-                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                                </path>
-                                <rect x="2" y="9" width="4" height="12"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                            </svg>
-                        </a>
+                <div class="terminal" id="terminal" role="region" aria-label="Interactive terminal">
+                    <div class="window-bar">
+                        <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                        <span class="window-title"><svg class="icon"><use href="#i-terminal"/></svg> visitor@nestchao: ~</span>
+                        <span class="window-hint">try <code>help</code></span>
+                    </div>
+                    <div class="terminal-body" id="terminal-body">
+                        <div class="terminal-output" id="terminal-output" aria-live="polite"></div>
+                        <form class="terminal-input-row" id="terminal-form" autocomplete="off">
+                            <label class="prompt" for="terminal-input"><span class="p-user">visitor</span><span class="p-at">@</span><span class="p-host">nestchao</span><span class="p-path">:~</span><span class="p-sign">$</span></label>
+                            <input class="terminal-input" id="terminal-input" type="text" spellcheck="false" autocapitalize="off" autocomplete="off" aria-label="Terminal command">
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+            <a class="scroll-cue" href="#about" aria-label="Scroll to about">
+                <span>scroll</span><i aria-hidden="true"></i>
+            </a>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Your Name. Built with passion and creativity.</p>
+        <!-- ============================== ABOUT ============================== -->
+        <section id="about" class="section" data-section-name="about.ts">
+            <div class="container">
+                <header class="section-head" data-reveal>
+                    <p class="section-index">01</p>
+                    <h2 class="section-title" data-scramble>about.ts</h2>
+                    <p class="section-sub">// who I am, and what I like to build</p>
+                </header>
+                <div class="about-grid">
+                    <div class="about-text" id="about-text" data-reveal></div>
+                    <div class="code-window" data-reveal data-tilt>
+                        <div class="window-bar">
+                            <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                            <span class="window-title"><svg class="icon"><use href="#i-file"/></svg> profile.ts</span>
+                        </div>
+                        <pre class="code" id="profile-code" aria-label="Profile as code"></pre>
+                    </div>
+                </div>
+                <div class="skills" id="skills" aria-label="Skills"></div>
+            </div>
+        </section>
+
+        <!-- ============================== GITHUB ============================== -->
+        <section id="github" class="section section-alt" data-section-name="stats.json">
+            <div class="container">
+                <header class="section-head" data-reveal>
+                    <p class="section-index">02</p>
+                    <h2 class="section-title" data-scramble>github --stats</h2>
+                    <p class="section-sub">// live from the GitHub API</p>
+                </header>
+                <div class="gh" id="gh" aria-busy="true">
+                    <div class="gh-stats" id="gh-stats">
+                        <div class="stat skeleton"></div><div class="stat skeleton"></div>
+                        <div class="stat skeleton"></div><div class="stat skeleton"></div>
+                    </div>
+                    <div class="gh-panels">
+                        <div class="panel" id="gh-langs"><div class="skeleton skeleton-block"></div></div>
+                        <div class="panel" id="gh-repos"><div class="skeleton skeleton-block"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== PROJECTS ============================== -->
+        <section id="projects" class="section" data-section-name="projects/">
+            <div class="container">
+                <header class="section-head" data-reveal>
+                    <p class="section-index">03</p>
+                    <h2 class="section-title" data-scramble>projects/</h2>
+                    <p class="section-sub">// things I've built: filter them, or grep them</p>
+                </header>
+                <div class="project-toolbar" data-reveal>
+                    <div class="chips" id="project-filters" role="toolbar" aria-label="Filter projects"></div>
+                    <label class="grep">
+                        <span class="grep-prompt" aria-hidden="true">$ grep -i</span>
+                        <input id="project-search" type="search" placeholder="kotlin, graph, ai…" aria-label="Search projects">
+                    </label>
+                </div>
+                <div class="projects" id="projects-grid"></div>
+                <p class="empty-state" id="projects-empty" hidden>No matches. <code>grep</code> returned exit code 1.</p>
+            </div>
+        </section>
+
+        <!-- ============================== EXPERIENCE ============================== -->
+        <section id="experience" class="section section-alt" data-section-name="git log">
+            <div class="container">
+                <header class="section-head" data-reveal>
+                    <p class="section-index">04</p>
+                    <h2 class="section-title" data-scramble>git log --graph</h2>
+                    <p class="section-sub">// education &amp; experience, newest first</p>
+                </header>
+                <div class="gitlog-wrap">
+                    <span class="gitlog-rail" aria-hidden="true"><span class="gitlog-rail-fill"></span></span>
+                    <ol class="gitlog" id="gitlog"></ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== BLOG ============================== -->
+        <section id="blog" class="section" data-section-name="blog/">
+            <div class="container">
+                <header class="section-head" data-reveal>
+                    <p class="section-index">05</p>
+                    <h2 class="section-title" data-scramble>blog/</h2>
+                    <p class="section-sub">// notes on things I'm learning and building</p>
+                </header>
+                <div class="posts" id="posts"></div>
+            </div>
+        </section>
+
+        <!-- ============================== CONTACT ============================== -->
+        <section id="contact" class="section section-alt" data-section-name="contact.sh">
+            <div class="container contact-grid">
+                <header class="section-head" data-reveal>
+                    <p class="section-index">06</p>
+                    <h2 class="section-title" data-scramble>contact.sh</h2>
+                    <p class="section-sub">// let's build something together</p>
+                    <p class="contact-lead">Have an opportunity, a project idea or just want to talk about AI? My inbox is open, and I usually reply within a day or two.</p>
+                    <div class="contact-cta">
+                        <a class="btn btn-primary" id="contact-mail" href="mailto:attukoang5@gmail.com" data-magnetic>
+                            <svg class="icon"><use href="#i-mail"/></svg><span>Say hello</span>
+                        </a>
+                        <a class="btn btn-ghost" href="assets/resume.pdf" download="Imam_Mahdi_Ali_Ang_Attuko_Resume.pdf" data-magnetic>
+                            <svg class="icon"><use href="#i-download"/></svg><span>Download resume</span>
+                        </a>
+                    </div>
+                </header>
+                <div class="code-window contact-script" data-reveal>
+                    <div class="window-bar">
+                        <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                        <span class="window-title"><svg class="icon"><use href="#i-file"/></svg> contact.sh</span>
+                    </div>
+                    <div class="contact-lines" id="contact-lines"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Status bar (VS Code style) -->
+    <footer class="statusbar" id="statusbar">
+        <div class="status-left">
+            <span class="status-item status-branch"><svg class="icon"><use href="#i-branch"/></svg> main</span>
+            <span class="status-item" id="status-section">~/home</span>
+        </div>
+        <div class="status-right">
+            <span class="status-item status-hide-sm" id="status-pos">Ln 1, Col 1</span>
+            <span class="status-item status-hide-sm">UTF-8</span>
+            <span class="status-item">© <span id="year">2026</span> Imam Mahdi</span>
         </div>
     </footer>
 
-    <script src="profile-loader.js"></script>
-    <script src="projects-loader.js"></script>
-    <script src="experience-loader.js"></script>
-    <script src="contact-loader.js"></script>
-    <script src="script.js"></script>
+    <!-- Command palette -->
+    <div class="palette" id="palette" hidden>
+        <div class="palette-backdrop" data-close></div>
+        <div class="palette-panel" role="dialog" aria-modal="true" aria-label="Command palette">
+            <div class="palette-search">
+                <span class="palette-caret" aria-hidden="true">&gt;</span>
+                <input id="palette-input" type="text" placeholder="Type a command or search…" aria-label="Search commands" aria-controls="palette-list" autocomplete="off" spellcheck="false">
+                <kbd>esc</kbd>
+            </div>
+            <ul class="palette-list" id="palette-list" role="listbox"></ul>
+        </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <noscript>
+        <div class="noscript">
+            <p>This site uses JavaScript for its interactive parts. You can still reach me at
+                <a href="mailto:attukoang5@gmail.com">attukoang5@gmail.com</a> or on
+                <a href="https://github.com/nestchao">GitHub</a>.</p>
+        </div>
+    </noscript>
+
+    <script src="vendor/gsap.min.js" defer></script>
+    <script src="vendor/ScrollTrigger.min.js" defer></script>
+    <script src="vendor/Flip.min.js" defer></script>
+    <script src="vendor/ScrambleTextPlugin.min.js" defer></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
