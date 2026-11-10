@@ -1,0 +1,10 @@
+[
+    {
+        "slug": "how-this-site-works",
+        "title": "How this site works: a terminal portfolio in vanilla JS",
+        "date": "2026-11-10",
+        "summary": "No framework, no build step: JSON files for content, ES modules for behaviour, GSAP for motion, and a tiny command interpreter for the hero terminal.",
+        "tags": ["javascript", "webdev", "meta"],
+        "minutes": 2
+    }
+]

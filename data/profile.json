@@ -1,11 +1,26 @@
 {
     "name": "Imam Mahdi Ali Ang Attuko",
-    "title": "Full Stack Developer",
-    "description": "Passionate about creating beautiful, functional, and user-centered digital experiences. Currently seeking internship opportunities to grow and contribute.",
+    "shortName": "Imam Mahdi",
+    "handle": "nestchao",
+    "title": "Software Developer",
+    "roles": [
+        "Software Developer",
+        "AI Enthusiast",
+        "CS Student @ TAR UMT",
+        "Mobile & Desktop App Builder"
+    ],
+    "location": "Malaysia",
+    "status": "Open to internships & collaborations",
+    "description": "I build software that solves real problems, from AI-powered study tools to mobile apps and graph-based routing systems.",
     "about": {
-        "intro": "I'm a driven computer science student currently pursing my Diploma in Computer Science at Tunku Abdul Rahman University of Management and Technology with a proven record of academic excellence 3.9117 CGPA. Skilled in multiple programming languages and frameworks, including Java, Kotlin, C++ and Python, with hands-on experience in database management with MySql and version control with Git",
-        "interests": "My greatest passion outside of core development lies in Artificial Intelligence. I constantly track the latest AI news and tools, and I love developing software solutions aimed at solving real-world problems",
+        "intro": "I'm a driven computer science student currently pursuing my Diploma in Computer Science at Tunku Abdul Rahman University of Management and Technology, with a proven record of academic excellence (3.9117 CGPA). I'm skilled in multiple programming languages and frameworks, including Java, Kotlin, C++ and Python, with hands-on experience in database management with MySQL and version control with Git.",
+        "interests": "My greatest passion outside of core development lies in Artificial Intelligence. I constantly track the latest AI news and tools, and I love developing software solutions aimed at solving real-world problems.",
         "goal": "Seeking a challenging internship position from January 12, 2026, to May 31, 2026. My primary goal is to contribute my existing technical knowledge to team projects while gaining hands-on experience and further developing my professional skills."
+    },
+    "facts": {
+        "education": "Diploma in Computer Science @ TAR UMT",
+        "cgpa": 3.91,
+        "focus": ["AI", "Mobile", "Backend"]
     },
     "contact": {
         "email": "attukoang5@gmail.com",
@@ -13,26 +28,27 @@
         "linkedin": "ang-imam-mahdi-ali-attuko-89701738a",
         "github": "nestchao"
     },
+    "resume": "assets/resume.pdf",
     "skills": [
         {
-            "category": "Frontend",
-            "icon": "💻",
-            "technologies": "Java, Kotlin, C++, Python"
+            "category": "languages",
+            "items": ["Java", "Kotlin", "C++", "Python", "Dart", "SQL"]
         },
         {
-            "category": "Backend",
-            "icon": "⚙️",
-            "technologies": "Java, C++, Python"
+            "category": "frameworks",
+            "items": ["Flutter", "Jetpack Compose", "Swing (FlatLaf)", "Tkinter"]
         },
         {
-            "category": "Database",
-            "icon": "🗄️",
-            "technologies": "MySql"
+            "category": "data",
+            "items": ["MySQL", "Firestore", "Redis", "JSON / Gson"]
         },
         {
-            "category": "Tools",
-            "icon": "🛠️",
-            "technologies": "Git, VS Code, Figma"
+            "category": "ai",
+            "items": ["Gemini API", "LLM pipelines", "Document ingestion"]
+        },
+        {
+            "category": "tools",
+            "items": ["Git", "GitHub", "VS Code", "Figma"]
         }
     ]
 }

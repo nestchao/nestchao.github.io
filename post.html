@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog · nestchao</title>
+    <meta name="description" content="Notes from Imam Mahdi (nestchao) on software, AI and things I'm building.">
+    <meta name="theme-color" content="#0a0d12">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0d12'/%3E%3Cpath d='M8 11l6 5-6 5' stroke='%233ddc97' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16 22h8' stroke='%233ddc97' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+    <script>
+        (function () {
+            var d = document.documentElement, t = null;
+            try { t = localStorage.getItem('theme'); } catch (e) { }
+            if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+            d.setAttribute('data-theme', t);
+        })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+            <symbol id="i-back" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M19 12H5M11 18l-6-6 6-6"/></symbol>
+            <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></g></symbol>
+            <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></symbol>
+            <symbol id="i-branch" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="8" r="2.5"/><path d="M6 8.5v7M18 10.5c0 4-6 3-11 5.5"/></g></symbol>
+        </defs>
+    </svg>
+
+    <header class="topbar scrolled">
+        <div class="topbar-inner">
+            <a href="index.html" class="brand" aria-label="Home">
+                <span class="brand-prompt">~/</span><span class="brand-name">nestchao</span><span class="brand-caret" aria-hidden="true"></span>
+            </a>
+            <div class="topbar-actions" style="margin-left:auto">
+                <a class="palette-btn" href="index.html#blog"><span>all posts</span></a>
+                <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-label="Toggle colour theme">
+                    <svg class="icon icon-sun"><use href="#i-sun"/></svg>
+                    <svg class="icon icon-moon"><use href="#i-moon"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="post-page">
+        <div class="container">
+            <a class="post-back" href="index.html#blog"><svg class="icon"><use href="#i-back"/></svg> cd ../blog</a>
+            <article id="post" aria-live="polite">
+                <div class="post-header">
+                    <div class="skeleton" style="height:14px;width:160px;border-radius:4px"></div>
+                    <div class="skeleton" style="height:44px;width:80%;margin-top:16px;border-radius:6px"></div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="statusbar">
+        <div class="status-left">
+            <span class="status-item status-branch"><svg class="icon"><use href="#i-branch"/></svg> main</span>
+            <span class="status-item">~/blog</span>
+        </div>
+        <div class="status-right">
+            <span class="status-item">© <span id="year">2026</span> Imam Mahdi</span>
+        </div>
+    </footer>
+
+    <script src="vendor/marked.min.js" defer></script>
+    <script src="vendor/purify.min.js" defer></script>
+    <script src="vendor/highlight.min.js" defer></script>
+    <script src="vendor/hljs-dart.min.js" defer></script>
+    <script type="module" src="js/blog.js"></script>
+</body>
+
+</html>
