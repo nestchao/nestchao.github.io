@@ -1,5 +1,5 @@
 // Light/dark theme. The initial value is set by the inline script in <head>
-// (stored choice, else the OS preference) so there is no flash on load.
+// (the visitor's stored choice, else dark) so there is no flash on load.
 const root = document.documentElement;
 const listeners = new Set();
 
@@ -25,11 +25,4 @@ export function initTheme() {
     setTheme(getTheme(), { persist: false });
 
     document.getElementById('theme-toggle')?.addEventListener('click', toggleTheme);
-
-    // Follow OS changes until the visitor picks a theme explicitly.
-    window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => {
-        let explicit = null;
-        try { explicit = localStorage.getItem('theme'); } catch { /* ignore */ }
-        if (!explicit) setTheme(e.matches ? 'light' : 'dark', { persist: false });
-    });
 }

@@ -938,6 +938,24 @@ kbd {
     transition: transform .7s var(--ease-out), filter .4s ease;
     filter: saturate(.9);
 }
+.project-art {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 4px;
+    padding: 18px 20px;
+    font-family: var(--font-mono);
+    background:
+        radial-gradient(420px 220px at 85% 0%, rgba(var(--accent-rgb), .22), transparent 70%),
+        radial-gradient(320px 200px at 0% 100%, color-mix(in srgb, var(--purple) 20%, transparent), transparent 70%),
+        repeating-linear-gradient(0deg, transparent 0 23px, var(--grid-dot) 23px 24px),
+        var(--surface-2);
+}
+.project-art-name { font-size: clamp(18px, 2vw, 24px); font-weight: 700; color: var(--text-strong); overflow-wrap: anywhere; }
+.project-art-name::before { content: "> "; color: var(--accent); }
+.project-art-lang { font-size: 12px; color: var(--muted); }
 .project:hover .project-media img { transform: scale(1.06); filter: saturate(1.05); }
 .project-media::after {
     content: "";
